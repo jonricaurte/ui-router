@@ -331,7 +331,7 @@ function $ViewDirectiveFill (  $compile,   $controller,   $state,   $interpolate
           $element.children().data('$ngControllerController', controller);
         }
 
-        scope['$resolve'] = locals;
+        scope.$resolve = locals;
 
         link(scope);
       };
